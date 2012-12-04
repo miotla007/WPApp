@@ -117,6 +117,14 @@
     <Resource Include="Images\black-soccer-ball1.jpg" />
     <Resource Include="Images\01_casillas.jpg" />
     <Resource Include="Images\17_arbeloa.jpg" />
+    <Resource Include="Images\15_Essien.jpg" />
+    <Resource Include="Images\carles_puyol.jpg" />
+    <Resource Include="Images\Gianluigi-Buffon_a_opi-conf.jpg" />
+    <Resource Include="Images\lewandowski.jpg" />
+    <Resource Include="Images\1275-2_robinho.jpg" />
+    <Resource Include="Images\16_modric.jpg" />
+    <Resource Include="Images\Wayne_Rooney.jpg" />
+    <Resource Include="Images\Lionel_Messi.jpg" />
     <Content Include="SplashScreenImage.jpg" />
     <Resource Include="Properties\zdjecie.jpg" />
   </ItemGroup>

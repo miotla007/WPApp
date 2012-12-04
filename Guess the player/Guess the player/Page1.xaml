@@ -26,26 +26,67 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Margin="12,17,12,0" Grid.RowSpan="2">
-            <StackPanel>
-                <Button Height="200" Width="200" HorizontalAlignment="Left"  Name="button1" VerticalAlignment="Top" Click="button1_Click" >
+            <StackPanel Margin="0,0,243,0">
+                <Button Height="150" Width="175" HorizontalAlignment="Left" Name="button1" VerticalAlignment="Top" Click="button1_Click">
                     <Button.Background>
                         <ImageBrush ImageSource="/Guess%20the%20player;component/Images/01_casillas.jpg" Stretch="UniformToFill" />
                     </Button.Background>
                 </Button>
-
-                <Button Height="200" Width="200" HorizontalAlignment="Left"  Name="button2" VerticalAlignment="Top" Click="button2_Click" >
+                <Button Height="150" Width="175" HorizontalAlignment="Left"  Name="button2" VerticalAlignment="Top" Click="button2_Click" >
                     <Button.Background>
                         <ImageBrush ImageSource="/Guess%20the%20player;component/Images/17_arbeloa.jpg" Stretch="UniformToFill" />
                     </Button.Background>
                 </Button>
 
-                <Button Height="200" Width="200" HorizontalAlignment="Left"  Name="button3" VerticalAlignment="Top" Click="button3_Click" >
+                <Button Height="150" Width="175" HorizontalAlignment="Left"  Name="button3" VerticalAlignment="Top" Click="button3_Click" >
                     <Button.Background>
-                        <ImageBrush ImageSource="/Guess%20the%20player;component/Images/01_casillas.jpg" Stretch="UniformToFill" />
+                        <ImageBrush ImageSource="/Guess%20the%20player;component/Images/15_Essien.jpg" />
+                    </Button.Background>
+                </Button>
+
+                <Button Height="150" Width="175" HorizontalAlignment="Left"  Name="button4" VerticalAlignment="Top" Click="button4_Click" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Guess%20the%20player;component/Images/carles_puyol.jpg" />
+                    </Button.Background>
+                </Button>
+                <Button Height="150" Width="175" HorizontalAlignment="Left" Name="button5" VerticalAlignment="Top" Click="button5_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Guess%20the%20player;component/Images/Gianluigi-Buffon_a_opi-conf.jpg" />
                     </Button.Background>
                 </Button>
                 
                 
+            </StackPanel>
+            <StackPanel Height="745" HorizontalAlignment="Left" Margin="219,0,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="231" >
+                <Button Height="150" Width="175" Name="button6" Click="button6_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Guess%20the%20player;component/Images/lewandowski.jpg" />
+                    </Button.Background>
+                </Button>
+
+                <Button Height="150" Width="175" Name="button7" Click="button7_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Guess%20the%20player;component/Images/1275-2_robinho.jpg" />
+                    </Button.Background>
+                </Button>
+
+                <Button Height="150" Width="175" Name="button8" Click="button8_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Guess%20the%20player;component/Images/16_modric.jpg" />
+                    </Button.Background>
+                </Button>
+
+                <Button Height="150" Width="175" Name="button9" Click="button9_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Guess%20the%20player;component/Images/Wayne_Rooney.jpg" />
+                    </Button.Background>
+                </Button>
+
+                <Button Height="150" Width="175" Name="button10" Click="button10_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Guess%20the%20player;component/Images/Lionel_Messi.jpg" />
+                    </Button.Background>
+                </Button>
             </StackPanel>
         </Grid>
     </Grid>

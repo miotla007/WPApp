@@ -57,11 +57,11 @@ namespace Guess_the_player
         {
             if (thisApp.wynik.ansvered(3))
             {
-                thisApp.baza.Num = 3;
                 MessageBox.Show("juz rozwiazanie");
             }
             else
             {
+                thisApp.baza.Num = 3;
                 NavigationService.Navigate(new Uri("/Page2.xaml", UriKind.RelativeOrAbsolute));
             }
         }
@@ -69,6 +69,97 @@ namespace Guess_the_player
         private void PhoneApplicationPage_BackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
         {
             NavigationService.Navigate(new Uri("/PanoramaPage1.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            if (thisApp.wynik.ansvered(4))
+            {
+                MessageBox.Show("juz rozwiazanie");
+            }
+            else
+            {
+                thisApp.baza.Num = 4;
+                NavigationService.Navigate(new Uri("/Page2.xaml", UriKind.RelativeOrAbsolute));
+            }
+        }
+
+        private void button5_Click(object sender, RoutedEventArgs e)
+        {
+            if (thisApp.wynik.ansvered(5))
+            {
+                MessageBox.Show("juz rozwiazanie");
+            }
+            else
+            {
+                thisApp.baza.Num = 5;
+                NavigationService.Navigate(new Uri("/Page2.xaml", UriKind.RelativeOrAbsolute));
+            }
+        }
+
+        private void button6_Click(object sender, RoutedEventArgs e)
+        {
+            if (thisApp.wynik.ansvered(6))
+            {
+                MessageBox.Show("juz rozwiazanie");
+            }
+            else
+            {
+                thisApp.baza.Num = 6;
+                NavigationService.Navigate(new Uri("/Page2.xaml", UriKind.RelativeOrAbsolute));
+            }
+        }
+
+        private void button7_Click(object sender, RoutedEventArgs e)
+        {
+            if (thisApp.wynik.ansvered(7))
+            {
+                MessageBox.Show("juz rozwiazanie");
+            }
+            else
+            {
+                thisApp.baza.Num = 7;
+                NavigationService.Navigate(new Uri("/Page2.xaml", UriKind.RelativeOrAbsolute));
+            }
+        }
+
+        private void button8_Click(object sender, RoutedEventArgs e)
+        {
+            if (thisApp.wynik.ansvered(8))
+            {
+                MessageBox.Show("juz rozwiazanie");
+            }
+            else
+            {
+                thisApp.baza.Num = 8;
+                NavigationService.Navigate(new Uri("/Page2.xaml", UriKind.RelativeOrAbsolute));
+            }
+        }
+
+        private void button9_Click(object sender, RoutedEventArgs e)
+        {
+            if (thisApp.wynik.ansvered(9))
+            {
+                MessageBox.Show("juz rozwiazanie");
+            }
+            else
+            {
+                thisApp.baza.Num = 9;
+                NavigationService.Navigate(new Uri("/Page2.xaml", UriKind.RelativeOrAbsolute));
+            }
+        }
+
+        private void button10_Click(object sender, RoutedEventArgs e)
+        {
+            if (thisApp.wynik.ansvered(10))
+            {
+                MessageBox.Show("juz rozwiazanie");
+            }
+            else
+            {
+                thisApp.baza.Num = 10;
+                NavigationService.Navigate(new Uri("/Page2.xaml", UriKind.RelativeOrAbsolute));
+            }
         }
     }
 }

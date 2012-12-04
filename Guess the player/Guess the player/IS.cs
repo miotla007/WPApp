@@ -21,7 +21,7 @@ namespace Guess_the_player
         public void SaveAnsvers()
         {
             String score = "";
-            for (int i = 1; i < 9; i++)
+            for (int i = 1; i < 11; i++)
             {
                 if (thisApp.wynik.ansvered(i)) score += "1;"; else score += "0;";
             }
@@ -36,17 +36,17 @@ namespace Guess_the_player
             char[] separators = { ';' };
             String[] scores = score.Split(separators);
 
-            if (scores.Length >= 8)
+            if (scores.Length >= 10)
             {
 
-                for (int i = 0; i < 8; i++)
+                for (int i = 0; i < 10; i++)
                 {
                     if (scores[i].CompareTo("1") == 0) thisApp.wynik.good_ansver(i + 1); else thisApp.wynik.bad_ansver(i + 1);
                 }
             }
             else
             {
-                for (int i = 0; i < 8; i++)
+                for (int i = 0; i < 10; i++)
                 {
                   thisApp.wynik.bad_ansver(i + 1);
                 }

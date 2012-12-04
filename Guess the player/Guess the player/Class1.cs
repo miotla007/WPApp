@@ -18,7 +18,7 @@ namespace Guess_the_player
     {
         App thisApp = Application.Current as App;
 
-        private int[] questions = { 0,0,0,0,0,0,0,0,0 }; 
+        private int[] questions = { 0,0,0,0,0,0,0,0,0,0,0 }; 
         private double score;
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -43,7 +43,7 @@ namespace Guess_the_player
 
         public String WynikP
         {
-            get { return (this.score * 100 / 8).ToString() + "%"; } // 8 - ilość pytan w poziomie
+            get { return (this.score * 100 / 10).ToString() + "%"; } // 10 - ilość pytan w poziomie
         }
 
         public double Wynik
