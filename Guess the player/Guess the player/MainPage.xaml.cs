@@ -44,5 +44,10 @@ namespace Guess_the_player
             thisApp.storage.ClearScores();
             NavigationService.Navigate(new Uri("/PanoramaPage1.xaml", UriKind.RelativeOrAbsolute));
         }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

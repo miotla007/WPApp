@@ -34,8 +34,9 @@
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0" Grid.ColumnSpan="2">
             <StackPanel HorizontalAlignment="Center">
-            <Button Content="Continue" Height="142" HorizontalAlignment="Left"  Name="button1" VerticalAlignment="Top" Width="297" BorderBrush="Orange" Foreground="Red" Click="button1_Click" Background="Black" />
-            <Button Content="New Game" Height="142" HorizontalAlignment="Left"  Name="button2" VerticalAlignment="Top" Width="297" BorderBrush="Orange" Foreground="Red" Click="button2_Click" Background="Black" />
+            <Button Content="Continue" Height="142" Name="button1" Width="297" BorderBrush="Orange" Foreground="Red" Click="button1_Click" Background="Black" />
+            <Button Content="New Game" Height="142" Name="button2" Width="297" BorderBrush="Orange" Foreground="Red" Click="button2_Click" Background="Black" />
+            <Button Content="How to play?" Height="142" Name="button3" Width="297" BorderBrush="Orange" Foreground="Red" Click="button3_Click" Background="Black" />
                </StackPanel>
         </Grid>
         <Grid.Background>

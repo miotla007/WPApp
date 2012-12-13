@@ -14,15 +14,15 @@ using System.Windows.Media.Imaging;
 
 namespace Guess_the_player
 {
-    public partial class Page2 : PhoneApplicationPage
+    public partial class Page4 : PhoneApplicationPage
     {
         App thisApp = Application.Current as App;
         int n;
-        public Page2()
+        public Page4()
         {
             InitializeComponent();
             n = thisApp.baza.Num;
-            image1.Source = new BitmapImage(new Uri(thisApp.baza.getPilkarzFoto(n), UriKind.Relative));  
+            image1.Source = new BitmapImage(new Uri(thisApp.baza.getPilkarzFoto(n), UriKind.Relative));
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -30,14 +30,14 @@ namespace Guess_the_player
             if (textBox1.Text.ToLower().CompareTo(thisApp.baza.getPilkarzName(n).ToLower()) == 0)
             {
                 MessageBox.Show("Good answer!");
-                thisApp.wynik.Wynik++;
+                thisApp.wynik2.Wynik++;
                 thisApp.wynik.good_ansver(n);
                 thisApp.storage.SaveScores();
                 thisApp.storage.SaveAnsvers();
                 //MessageBox.Show(thisApp.baza.getPilkarzName(n));
                 button1.IsEnabled = false;
-                
-                
+
+
             }
             else
             {
@@ -47,7 +47,7 @@ namespace Guess_the_player
 
         private void PhoneApplicationPage_BackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Page1.xaml", UriKind.RelativeOrAbsolute));
+            NavigationService.Navigate(new Uri("/Page3.xaml", UriKind.RelativeOrAbsolute));
         }
  
     }

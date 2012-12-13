@@ -8,7 +8,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
-
 using System.IO;
 using System.IO.IsolatedStorage;
 
@@ -21,7 +20,7 @@ namespace Guess_the_player
         public void SaveAnsvers()
         {
             String score = "";
-            for (int i = 1; i < 11; i++)
+            for (int i = 1; i < 21; i++)
             {
                 if (thisApp.wynik.ansvered(i)) score += "1;"; else score += "0;";
             }
@@ -36,17 +35,17 @@ namespace Guess_the_player
             char[] separators = { ';' };
             String[] scores = score.Split(separators);
 
-            if (scores.Length >= 10)
+            if (scores.Length >= 20)
             {
 
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < 20; i++)
                 {
                     if (scores[i].CompareTo("1") == 0) thisApp.wynik.good_ansver(i + 1); else thisApp.wynik.bad_ansver(i + 1);
                 }
             }
             else
             {
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < 20; i++)
                 {
                   thisApp.wynik.bad_ansver(i + 1);
                 }

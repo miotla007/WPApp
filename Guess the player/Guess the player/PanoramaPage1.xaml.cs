@@ -34,14 +34,14 @@ namespace Guess_the_player
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            if (thisApp.wynik.WynikP.CompareTo("100%") != 0) // 8 - ilość pytan w poziomie
-            {
-                MessageBox.Show("Aby rozpocząć level2 musisz ukonczyc level1");
-            }
-            else
-            {
-                NavigationService.Navigate(new Uri("/Page1.xaml", UriKind.RelativeOrAbsolute)); //zmienic na level2
-            }
+           // if (thisApp.wynik.WynikP.CompareTo("100%") != 0) // 8 - ilość pytan w poziomie
+           // {
+           //     MessageBox.Show("Aby rozpocząć level2 musisz ukonczyc level1");
+            //}
+           // else
+           // {
+                NavigationService.Navigate(new Uri("/Page3.xaml", UriKind.RelativeOrAbsolute)); //zmienic na level2
+           // }
         }
 
         private void PhoneApplicationPage_BackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
